@@ -27,7 +27,7 @@ export default function ContactSection() {
               <div>
                 <p className="font-semibold mb-1">주소</p>
                 <p className="text-slate-300">
-                  서울특별시 용산구 청파로 77, 창업지원센터 4호실
+                  서울특별시 동작구 흑석로 84(중앙대학교) 108관 108호
                 </p>
               </div>
             </div>

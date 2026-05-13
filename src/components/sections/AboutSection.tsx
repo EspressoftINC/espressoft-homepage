@@ -7,28 +7,41 @@ export default function AboutSection() {
     {
       name: "명재현",
       role: "CEO",
+      image: "/team-myung.png",
       credentials: [
         "중앙대학교 건축공학",
-        "고려대학교 건설자동화연구실",
+        "퍼듀대학교 I2Safe 연구실",
         "AI+건축 논문 3편 발표",
       ],
     },
     {
       name: "박범규",
       role: "CTO",
+      image: "/team-park-bk.png",
       credentials: [
         "서울대학교 컴퓨터공학 학석사",
-        "네이버 클라우드 K-AI Frontiers 출신",
-        "AI 파운데이션 모델 개발",
+        "네이버 클라우드 K-AI Frontiers",
+        "AI 모델 프레임워크 개발",
       ],
     },
     {
       name: "김민석",
       role: "COO",
+      image: "/team-kim.png",
       credentials: [
         "서울시립대학교 전자전기컴퓨터공학",
         "컴퓨터비전 연구",
         "백엔드 & 프론트엔드 총괄",
+      ],
+    },
+    {
+      name: "박석원",
+      role: "CSO",
+      image: "/team-park-sw.jpeg",
+      credentials: [
+        "한양대학교 정보시스템학과",
+        "재무·회계 총괄",
+        "마케팅 전략 총괄",
       ],
     },
   ];
@@ -40,12 +53,13 @@ export default function AboutSection() {
           title="팀 소개"
           subtitle="건축과 AI 기술의 융합을 통해 산업 혁신을 이끌어가는 전문가들입니다"
         />
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {team.map((member, index) => (
             <TeamCard
               key={index}
               name={member.name}
               role={member.role}
+              image={member.image}
               credentials={member.credentials}
             />
           ))}

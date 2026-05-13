@@ -1,6 +1,6 @@
 import Container from "@/components/ui/Container";
 import SectionHeader from "@/components/ui/SectionHeader";
-import { Shield, FileCheck, Zap, TrendingUp, LucideIcon } from "lucide-react";
+import { Box, MessagesSquare, Sparkles, MousePointerClick, LucideIcon } from "lucide-react";
 
 interface ServiceFeature {
   icon: LucideIcon;
@@ -11,28 +11,28 @@ interface ServiceFeature {
 export default function ServiceSection() {
   const features: ServiceFeature[] = [
     {
-      icon: Shield,
-      title: "법규 검토 자동화",
+      icon: Box,
+      title: "IFC 3D 뷰어",
       description:
-        "건축도면에 대한 법규 검토를 AI로 자동화하여, 설계·시공 과정에서 발생하는 법규 누락과 해석 오류를 근본적으로 줄입니다.",
+        "별도 BIM 도구 없이 웹 브라우저에서 IFC 모델을 즉시 시각화합니다. 회전·줌·팬은 물론 요소 클릭 선택까지 매끄럽게 지원합니다.",
     },
     {
-      icon: FileCheck,
-      title: "근거 기반 검토",
+      icon: MessagesSquare,
+      title: "자연어 BIM 질의",
       description:
-        "단순한 오류 탐지를 넘어, 각 위반 사항에 대해 관련 법 조항과 판단 근거를 함께 제시하는 신뢰도 높은 AI 검토 체계를 제공합니다.",
+        "BIM 쿼리 언어나 SQL을 몰라도 누구나 모델을 분석할 수 있습니다.",
     },
     {
-      icon: Zap,
-      title: "실시간 검토",
+      icon: Sparkles,
+      title: "AI Text-to-SQL 엔진",
       description:
-        "설계 변경이 잦은 건축 실무 환경을 고려하여, 도면 변경 시에도 즉시 법규 적합성을 확인할 수 있는 구조를 제공합니다.",
+        "질문을 IFC 스키마에 맞는 SQL로 자동 변환하여 BIM DB에서 즉시 결과를 산출합니다. 높은 보안성과 정확도를 보장합니다.",
     },
     {
-      icon: TrendingUp,
-      title: "검증된 성과",
+      icon: MousePointerClick,
+      title: "3D 연동 하이라이트",
       description:
-        "도면 1건당 검토 시간을 기존 대비 50% 이상 단축하고, 주요 법규 항목에 대한 위반 검출 정확도 90% 이상을 달성합니다.",
+        "AI 답변에 언급된 건축 요소를 3D 뷰어에서 자동으로 강조 표시합니다. 데이터와 형상을 한눈에 연결하여 의사결정 속도를 높입니다.",
     },
   ];
 
@@ -40,8 +40,8 @@ export default function ServiceSection() {
     <section id="service" className="py-20 bg-muted">
       <Container>
         <SectionHeader
-          title="도면 검토 AI"
-          subtitle="AI 기술로 건축도면 법규 검토를 자동화하여 산업의 효율성을 혁신합니다"
+          title="BIBIM — BIM Intelligence"
+          subtitle="IFC 모델을 3D로 보면서 자연어로 질의하는 차세대 BIM 분석 플랫폼"
         />
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {features.map((feature, index) => {
