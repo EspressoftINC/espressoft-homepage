@@ -12,27 +12,27 @@ export default function ServiceSection() {
   const features: ServiceFeature[] = [
     {
       icon: Box,
-      title: "IFC 3D 뷰어",
+      title: "IFC 3D Viewer",
       description:
-        "별도 BIM 도구 없이 웹 브라우저에서 IFC 모델을 즉시 시각화합니다. 회전·줌·팬은 물론 요소 클릭 선택까지 매끄럽게 지원합니다.",
+        "Visualize IFC models instantly in your browser — no BIM software required. Rotate, zoom, pan, and click to select elements seamlessly.",
     },
     {
       icon: MessagesSquare,
-      title: "자연어 BIM 질의",
+      title: "Natural Language BIM Queries",
       description:
-        "BIM 쿼리 언어나 SQL을 몰라도 누구나 모델을 분석할 수 있습니다.",
+        "Anyone can analyze a model — no BIM query language or SQL knowledge needed.",
     },
     {
       icon: Sparkles,
-      title: "AI Text-to-SQL 엔진",
+      title: "AI Text-to-SQL Engine",
       description:
-        "질문을 IFC 스키마에 맞는 SQL로 자동 변환하여 BIM DB에서 즉시 결과를 산출합니다. 높은 보안성과 정확도를 보장합니다.",
+        "Questions are automatically translated into IFC-schema-aware SQL and answered directly from the BIM database — secure and accurate.",
     },
     {
       icon: MousePointerClick,
-      title: "3D 연동 하이라이트",
+      title: "Linked 3D Highlighting",
       description:
-        "AI 답변에 언급된 건축 요소를 3D 뷰어에서 자동으로 강조 표시합니다. 데이터와 형상을 한눈에 연결하여 의사결정 속도를 높입니다.",
+        "Elements mentioned in AI answers are highlighted in the 3D viewer automatically, connecting data and geometry at a glance for faster decisions.",
     },
   ];
 
@@ -41,8 +41,23 @@ export default function ServiceSection() {
       <Container>
         <SectionHeader
           title="BIBIM — BIM Intelligence"
-          subtitle="IFC 모델을 3D로 보면서 자연어로 질의하는 차세대 BIM 분석 플랫폼"
+          subtitle="A next-generation BIM analytics platform — explore IFC models in 3D and ask questions in plain language"
         />
+        <div id="demo" className="mx-auto mb-16 max-w-4xl">
+          <div className="relative aspect-video overflow-hidden rounded-2xl bg-slate-900 shadow-2xl ring-1 ring-border">
+            <iframe
+              src="https://www.youtube-nocookie.com/embed/2fv_Unq3YiE?rel=0"
+              title="BIBIM — Bot Interface for BIM demo"
+              allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
+              className="absolute inset-0 h-full w-full"
+            />
+          </div>
+          <p className="mt-4 text-center text-sm text-secondary">
+            See BIBIM in action — from loading an IFC model to answering questions in plain language
+          </p>
+        </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {features.map((feature, index) => {
             const Icon = feature.icon;

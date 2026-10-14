@@ -10,19 +10,19 @@ export default function HistorySection() {
   const history: HistoryItem[] = [
     {
       date: "2024.09",
-      title: "엔지니어링산업 경진대회 BIM부문 수상",
+      title: "Award, BIM Division — Engineering Industry Competition",
     },
     {
       date: "2025.08",
-      title: "용산구 창업지원센터 입주기업 선발",
+      title: "Selected for Yongsan-gu Startup Support Center",
     },
     {
       date: "2025.12",
-      title: "주식회사 에스프레소프트 사업자 등록",
+      title: "Espressoft Inc. officially incorporated",
     },
     {
       date: "2026.03",
-      title: "중앙대학교 캠퍼스타운 입주기업 선발",
+      title: "Selected for Chung-Ang University Campus Town",
     },
   ];
 
@@ -30,8 +30,8 @@ export default function HistorySection() {
     <section id="history" className="py-20 bg-muted">
       <Container>
         <SectionHeader
-          title="연혁"
-          subtitle="성장을 이어나가는 에스프레소프트의 발자취입니다"
+          title="Milestones"
+          subtitle="The path Espressoft has taken so far"
         />
         <div className="relative mx-auto max-w-3xl">
           {/* 중앙 세로선 — 마지막 점 아래로 꼬리를 두고 그 구간에서 페이드 */}

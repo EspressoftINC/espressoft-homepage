@@ -3,9 +3,9 @@ import { ChevronDown } from "lucide-react";
 import Image from "next/image";
 
 export default function HeroSection() {
-  const scrollToService = () => {
-    const serviceSection = document.getElementById("service");
-    serviceSection?.scrollIntoView({ behavior: "smooth" });
+  const scrollToDemo = () => {
+    const demo = document.getElementById("demo");
+    demo?.scrollIntoView({ behavior: "smooth", block: "center" });
   };
 
   return (
@@ -14,27 +14,27 @@ export default function HeroSection() {
         <div className="text-center">
           <Image
             src="/logo.png"
-            alt="Espressoft Inc. 로고"
+            alt="Espressoft Inc. logo"
             width={220}
             height={220}
             priority
             className="mx-auto mb-8 h-auto w-40 sm:w-48 lg:w-56"
           />
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-foreground mb-6">
-            현장을 이해하는 AI,
+            AI That Understands the Field,
             <br />
-            건축 산업의 기준을
+            Redefining the Standard
             <br />
-            다시 정의합니다
+            of Construction
           </h1>
           <p className="text-lg sm:text-xl text-secondary mb-8 max-w-2xl mx-auto">
-            IFC 건축 모델을 3D로 보면서, 자연어로 BIM 데이터를 질의하세요
+            Explore IFC building models in 3D and query BIM data in plain language
           </p>
           <button
-            onClick={scrollToService}
+            onClick={scrollToDemo}
             className="inline-flex items-center gap-2 bg-primary hover:bg-primary-dark text-white font-semibold px-8 py-4 rounded-lg transition-colors text-lg"
           >
-            서비스 알아보기
+            Watch Demo
             <ChevronDown className="w-5 h-5" />
           </button>
         </div>

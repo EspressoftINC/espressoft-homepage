@@ -10,13 +10,13 @@ const pretendard = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "에스프레소프트 | 건축 산업의 AI 혁신",
-  description: "현장을 이해하는 AI, 건축 산업의 기준을 다시 정의합니다. 건축도면 법규 검토 자동화 기술을 개발하는 에스프레소프트입니다.",
-  keywords: ["AI", "건축", "도면검토", "법규검토", "건설기술", "에스프레소프트"],
+  title: "Espressoft | AI for the Construction Industry",
+  description: "AI that understands the field, redefining the standard of construction. Espressoft builds AI for BIM analysis and automated building code review.",
+  keywords: ["AI", "BIM", "IFC", "Architecture", "Building Code Review", "Construction Tech", "Espressoft"],
   openGraph: {
-    title: "에스프레소프트 주식회사",
-    description: "현장을 이해하는 AI, 건축 산업의 기준을 다시 정의합니다",
-    locale: "ko_KR",
+    title: "Espressoft Inc.",
+    description: "AI that understands the field, redefining the standard of construction",
+    locale: "en_US",
     type: "website",
   },
 };
@@ -27,7 +27,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ko">
+    <html lang="en">
       <body className={`${pretendard.variable} antialiased`}>
         {children}
       </body>
