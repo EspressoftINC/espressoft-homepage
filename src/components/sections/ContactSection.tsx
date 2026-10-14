@@ -34,6 +34,9 @@ export default function ContactSection() {
           </div>
         </div>
         <div className="border-t border-slate-700 pt-8">
+          <p className="text-center text-slate-500 text-sm mb-2">
+            Business Registration No. 278-86-03448
+          </p>
           <p className="text-center text-slate-400 text-sm">
             © {new Date().getFullYear()} Espressoft Inc. All rights reserved.
           </p>
